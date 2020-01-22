@@ -1,0 +1,33 @@
+<view>
+    <!-- 有优惠券 -->
+    <view wx:if="{{isTicket}}">
+        <view class="ticket">
+            <view class="ticket_head">
+                <!-- ticket_head_txt ticket_head_color -->
+                <view class="{{head.id == headID ? 'ticket_head_txt ticket_head_color' : 'ticket_head_txt'}}" data-id='{{head.id}}' bindtap='selectiveType' wx:for="{{headList}}" wx:for-item="head" wx:key='key'>
+                    {{head.name}}
+                </view>
+            </view>
+        </view>
+        <view class="ticket_content">
+            <view class="content">
+                <view class="content_left">
+                    <text>30</text>
+                    <text class="content_left_txt">分钟</text>
+                </view>
+                <view class="content_right">
+                    <view class="content_right_chong">充电时长券</view>
+                    <view class="content_right_shi">适用于充电抵用</view>
+                    <view class="content_right_xian"></view>
+                    <view class="content_right_you">有效期：2019.11.7-2019.12.7</view>
+                    <view class="content_right_btn">立即使用</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 没有优惠券 -->
+    <view wx:else class="no_ticket">
+        <image src="../../../../images/no_ticket.png" />
+        <view class="no_ticket_txt">暂时没有优惠券哦~</view>
+    </view>
+</view>

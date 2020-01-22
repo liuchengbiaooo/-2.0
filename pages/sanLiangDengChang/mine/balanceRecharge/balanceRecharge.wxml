@@ -1,0 +1,42 @@
+<view class="warp">
+    <view class="warp_top">
+       
+        <view class="{{rechargeAmountId == '0' ? 'warp_top_bgOne': 'warp_top_conten'}}" data-id='0' data-memberID="5" data-money='188' bindtap='selectMoney'>
+            <view class='warp_top_vip' wx:if="{{rechargeAmountId == '0' }}">终身VIP+大礼包</view>
+            <text class="num">188</text>
+            <text class="money">元</text>
+        </view>
+        <view class="{{rechargeAmountId == item.id ? 'warp_top_bgTwo' : 'warp_top_conten'}}" wx:for="{{rechargeAmountList}}" wx:for-item="item" wx:key="index" data-money='{{item.money}}' data-id='{{item.id}}' data-memberID='{{item.memberID}}' bindtap='selectMoney'>
+            <text class="num">{{item.money}}</text>
+            <text class="money">{{item.name}}</text>
+        </view>
+    </view>
+    <view class="warp_manner">
+        <view class="warp_manner_txt">支付方式</view>
+        <view class="warp_manner_waf" data-id="0" bindtap='paymentmode'>
+            <view class="warp_manner_waf_lift">
+                <image class="weixin" src="../../../../images/weixinzf.png" />
+                <view class="warp_manner_waf_txt">微信支付</view>
+            </view>
+            <view class="warp_manner_waf_yuan">
+                <view class="interior" wx:if="{{paymentModeId == '0'}}"></view>
+            </view>
+        </view>
+        <view class="warp_manner_waf" data-id="1" bindtap='paymentmode'>
+            <view class="warp_manner_waf_lift">
+                <image class="yinlian" src="../../../../images/yinlianzf.png" />
+                <view class="warp_manner_waf_yin">银联支付</view>
+            </view>
+            <view class="warp_manner_waf_yuanTwo">
+                <view class="interior" wx:if="{{paymentModeId == '1'}}"></view>
+            </view>
+        </view>
+    </view>
+    <!-- <view class="warp_protocol">
+        <text >点击充值即同意</text>
+        <text class="warp_protocol_color">《充值协议》</text>
+    </view> -->
+    <view class="warp_btn" bindtap="balanceRecharge" bindtouchstart="touchStart" bindtouchend="touchEnd">
+        充值
+    </view>
+</view>

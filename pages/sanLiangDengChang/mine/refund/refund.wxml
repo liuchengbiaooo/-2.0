@@ -1,0 +1,32 @@
+<view>
+    <view class="refund" wx:if="{{refundData.length > 0}}">
+         <view class="complete"  wx:for="{{refundData}}" wx:key='index' wx:for-item="item">
+            <view class="complete_top">
+                <view class='complete_top_left'>
+                    <view class="left_head">
+                        <view>设备号：{{item.orderCode}}</view>
+                        <view>设备码：{{item.deviceCode}}</view>
+                    </view>
+                    <view class="left_txt">{{item.createTime}}</view>
+                </view>
+                <view class="complete_top_right">
+                    <view class="right_yi">已完成</view>
+                    <view class="right_shen">申请退款</view>
+                </view>
+            </view>
+            <view class="complete_xian"></view>
+            <view class="complete_bottom">
+                <view class='complete_bottom_left'>
+                    <view class="left_yuan"></view>
+                    <view class="left_shi">时长: {{item.beginMinute}}: {{item.beginSecond}}</view>
+                </view>
+                <view class="complete_bottom_right">￥ {{item.actualPrice}}元</view>
+            </view>
+        </view>
+    </view>
+    <view wx:else class="no_refund">
+        <image src="../../../../images/no_refund.png"/>
+        <view class="no_refund_txt">没有你的订单</view>
+        <view class="no_refund_btn" bindtap='experience'>去体验</view>
+    </view>
+</view>

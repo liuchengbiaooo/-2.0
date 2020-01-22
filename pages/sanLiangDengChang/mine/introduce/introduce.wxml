@@ -1,0 +1,8 @@
+<view >
+    <view class="introduce">
+            <view class="warp_head">减碳贡献值规则</view>
+            <view class="warp_content">{{txtxOne}}</view>
+            <view class="warp_head">减碳贡献值等级</view>
+            <view class="warp_content">{{txtxOne}}</view>
+    </view>
+</view>

@@ -1,0 +1,117 @@
+.ticket {
+    width: 100%;
+    background-color: #fff;
+}
+
+.ticket_head {
+    width: 684rpx;
+    margin: 0rpx 0rpx 0rpx 33rpx;
+    color: #666666;
+    font-size: 30rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket_head_txt {
+    height: 100rpx;
+    width: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+}
+
+.ticket_head_color {
+    color: #2fcfbd;
+    border-bottom: 1rpx solid #2fcfbd;
+}
+
+.ticket_content {
+    padding: 0rpx 27rpx 0rpx 39rpx;
+}
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    border-radius: 6rpx;
+    margin-top: 10rpx;
+}
+
+.content_left {
+    width: 190rpx;
+    margin-left: -2rpx;
+    text-align: center;
+    line-height: 165rpx;
+    color: #fff;
+    font-size: 74rpx;
+    background-image: url("https://sldc.oss-cn-beijing.aliyuncs.com/banner/beijing3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+
+.content_left_txt {
+    font-size: 20rpx;
+}
+
+.content_right {
+    margin-left: 31rpx;
+    position: relative;
+    flex: 1;
+}
+
+.content_right_chong {
+    margin-top: 13rpx;
+    color: #333333;
+    font-size: 30rpx;
+}
+
+.content_right_shi {
+    margin-top: 19rpx;
+    font-size: 26rpx;
+    color: #666666;
+}
+
+.content_right_xian {
+    width: 327rpx;
+    height: 20rpx;
+    border-bottom: 1rpx dashed #30d0be;
+}
+
+.content_right_you {
+    margin-top: 16rpx;
+    color: #999999;
+    font-size: 24rpx;
+    margin-bottom: 15rpx;
+}
+
+.content_right_btn {
+    position: absolute;
+    right: 12rpx;
+    top: 12rpx;
+    width: 120rpx;
+    height: 40rpx;
+    border-radius: 20rpx;
+    border: solid 1rpx #30d0be;
+    color: #30d0be;
+    font-size: 24rpx;
+    text-align: center;
+    line-height: 40rpx;
+}
+
+.no_ticket {
+    box-sizing: border-box;
+}
+
+.no_ticket image {
+    width: 506rpx;
+    height: 326rpx;
+    margin-top: 230rpx;
+    margin-left: 115rpx;
+}
+
+.no_ticket_txt {
+    color: #615f60;
+    font-size: 30rpx;
+    text-align: center;
+    margin-top: 43rpx;
+}

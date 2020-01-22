@@ -1,0 +1,182 @@
+page {
+    background-color: #fff;
+}
+
+.warp {
+    padding: 0rpx 46rpx 0rpx 48rpx;
+}
+
+.warp_top {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 655rpx; */
+    margin-top: 33rpx;
+    position: relative;
+}
+
+.warp_top_vip {
+    position: absolute;
+    left: 22rpx;
+    top: -77rpx;
+    color: #ffffff;
+    font-size: 23rpx;
+}
+
+.warp_top_conten {
+    width: 203rpx;
+    height: 128rpx;
+    border-radius: 10rpx;
+    border: solid 2rpx #dfdfdf;
+    line-height: 128rpx;
+    text-align: center;
+    margin-top: 39rpx;
+    margin-left: 19rpx;
+}
+
+.warp_top_conten:nth-child(4) {
+    margin-left: 0rpx;
+}
+
+.warp_top_conten:nth-child(1) {
+    margin-left: 0rpx;
+}
+
+.warp_top_bgTwo:nth-child(4) {
+    margin-left: 0rpx;
+}
+
+.warp_top_bgOne {
+    width: 203rpx;
+    height: 167rpx;
+    background-image: url("https://sldc.oss-cn-beijing.aliyuncs.com/xiaochengxu/zhifu.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    line-height: 202rpx;
+    text-align: center;
+}
+
+.warp_top_bgTwo {
+    width: 203rpx;
+    height: 128rpx;
+    background-image: url("https://sldc.oss-cn-beijing.aliyuncs.com/xiaochengxu/baikuang.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    line-height: 128rpx;
+    text-align: center;
+    margin-top: 39rpx;
+    margin-left: 21rpx;
+}
+
+.num {
+    color: #30d0be;
+    font-size: 36rpx;
+}
+
+.money {
+    color: #c5c5c5;
+    font-size: 25rpx;
+}
+
+.warp_manner {
+    margin-top: 81rpx;
+}
+
+.warp_manner_txt {
+    color: #333333;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 28rpx;
+    font-weight: normal;
+}
+
+.warp_manner_waf {
+    display: flex;
+    width: 647rpx;
+    justify-content: space-between;
+    border-bottom: 2rpx solid #eeeeee;
+    margin-top: 38rpx;
+}
+
+.warp_manner_waf_lift {
+    display: flex;
+}
+
+.warp_manner_waf_txt {
+    color: #333333;
+    font-size: 24rpx;
+    margin: 10rpx 0rpx 0rpx 26rpx;
+}
+
+.warp_manner_waf_yin {
+    color: #333333;
+    font-size: 24rpx;
+    margin: 0rpx 0rpx 0rpx 26rpx;
+}
+
+.weixin {
+    width: 58rpx;
+    height: 58rpx;
+    margin-bottom: 25rpx;
+}
+
+.yinlian {
+    width: 55rpx;
+    height: 31rpx;
+    margin-bottom: 40rpx;
+}
+
+.warp_manner_waf_yuan {
+    width: 35rpx;
+    height: 36rpx;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    margin-top: 10rpx;
+    position: relative;
+}
+
+.warp_manner_waf_yuanTwo {
+    width: 35rpx;
+    height: 36rpx;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    position: relative;
+}
+
+.interior {
+    position: absolute;
+    left: 11rpx;
+    top: 12rpx;
+    width: 13rpx;
+    height: 14rpx;
+    background-image: linear-gradient(108deg, #aafae0 0%, #59f2cc 50%, #4ab2ec 100%), linear-gradient( #eeeeee, #eeeeee);
+    background-blend-mode: normal, normal;
+    box-shadow: 0rpx 6rpx 21rpx 0rpx rgba(85, 120, 228, 0.36);
+    border-radius: 50%;
+}
+
+.warp_protocol {
+    margin-top: 42rpx;
+    text-align: center;
+    color: #333333;
+    font-size: 24rpx;
+}
+
+.warp_protocol_color {
+    color: #30d0be;
+    font-size: 24rpx;
+}
+
+.warp_btn {
+    width: 649rpx;
+    height: 94rpx;
+    background-image: linear-gradient( #30d0be, #30d0be), linear-gradient( #ffffff, #ffffff);
+    background-blend-mode: normal, normal;
+    box-shadow: 0rpx 6rpx 21rpx 0rpx rgba(29, 181, 172, 0.36);
+    border-radius: 10rpx;
+    color: #ffffff;
+    font-size: 28rpx;
+    margin-top: 25rpx;
+    line-height: 94rpx;
+    text-align: center;
+}

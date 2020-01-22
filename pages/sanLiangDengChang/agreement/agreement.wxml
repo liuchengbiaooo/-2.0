@@ -1,0 +1,24 @@
+<view class="agreement">
+    <view class="agreement_head">使用该设备需缴纳{{pledge}}元预付金</view>
+    <view class="agreement_btn" bindtap='advance' bindtouchstart="touchStart" bindtouchend="touchEnd">预付金{{pledge}}元</view>
+     <view class="agreement_btn" bindtap='clickSkip'>充值会员</view>
+    <view class="agreement_txt">
+        <view class="agreement_txt_wen">温馨提示</view>
+        <view class="agreement_txt_List">
+            <view class="List">1.使用前需交纳5元预付金（订单结束后，在小程序个人中心提现，也可存入个人账户供下次充电使用）</view>
+            <view class="List">2.支付成功后，请选择指示灯亮起的USB充电线开始充电</view>
+            <view class="List">3.点击结束充电，默认该订单完成，系统将根据充电时长进行扣费。如要再充，需重新扫码二维码。（特别提醒：充电结束时请及时点击结束充电按钮，以免系统继续扣费，给您个人造成不必要的损失）</view>
+            <view class="List">4.如开通其他服务（如吹风扇、驱蚊等功能），系统将根据平台收费规则，在您个人账户中进行自动扣费。</view>
+            <view class="List">5.如有疑问，请联系我们：400-108-1806</view>
+        </view>
+    </view>
+    <view class='guide-protocol'>
+        <view class="guide-protocol-yuan" bindtap="isCheck">
+            <image src="../../../images/dui.png" class="guide-protocol-img" wx:if="{{isShow}}"/>
+        </view>
+        <text class="guide-protocol-txt">阅读并同意</text>
+        <navigator url='./userProtocol/userProtocol' hover-class='none' hover-stop-propagation='true' class='user-protocol'>
+            《 相关条约 》
+        </navigator>
+    </view>
+</view>

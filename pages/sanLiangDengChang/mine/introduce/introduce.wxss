@@ -1,0 +1,19 @@
+.introduce {
+    padding: 0rpx 42rpx 0rpx 41rpx;
+}
+
+.warp_head {
+    color: #000000;
+    opacity: 0.8;
+    font-size: 30rpx;
+    font-weight: normal;
+    margin-top: 43rpx;
+}
+
+.warp_content {
+    color: #5b5b5b;
+    opacity: 0.8;
+    line-height: 38rpx;
+    font-size: 24rpx;
+    margin-top: 20rpx;
+}

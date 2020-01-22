@@ -1,0 +1,51 @@
+<view>
+    <view class="wallet_head">
+        <view class="head_balance">
+            <image src="../../../../images/qianbao.png" />
+            <text class="head_balance_txt">{{balance}}</text>
+        </view>
+        <view class="wallet_head_usable">可用余额 (元)</view>
+        <view class="head_btn">
+            <view class="head_btn_lift common" bindtap='goRecharge'>去充值</view>
+            <view class="head_btn_right common">去提现</view>
+        </view>
+    </view>
+    <view class="wallet_detail">资金明细</view>
+    <view>
+        <view class="wallet_content" wx:for="{{detailList}}" wx:for-item="item" wx:key="index">
+            <view class="wallet_content_lift">
+                <image src="../../../../images/wan.png" wx:if="{{item.type == 0}}" />
+                <image src="../../../../images/xiao.png" wx:elif="{{item.type == 1}}" />
+                <image src="../../../../images/ti.png" wx:elif="{{item.type == 2}}" />
+                <image src="../../../../images/wan.png" wx:elif="{{item.type == 3}}" />
+                <image src="../../../../images/wan.png" wx:elif="{{item.type == 4}}" />
+                <image src="../../../../images/wan.png" wx:elif="{{item.type == 5}}" />
+                <view class="wallet_content_txt">
+                    <view wx:if="{{item.type == 0}}">完成充值</view>
+                    <view wx:elif="{{item.type == 1}}">消费成功</view>
+                    <view wx:elif="{{item.type == 2}}">提现成功</view>
+                    <view wx:elif="{{item.type == 3}}">月卡会员</view>
+                    <view wx:elif="{{item.type == 4}}">年卡会员</view>
+                    <view wx:elif="{{item.type == 5}}">终身会员</view>
+                    <view class="exception">{{item.createTime}}</view>
+                </view>
+            </view>
+            <view class="wallet_content_num" wx:if="{{item.type == 0}}">+{{item.amount}}</view>
+            <view class="wallet_content_num" wx:elif="{{item.type == 1}}">-{{item.amount}}</view>
+            <view class="wallet_content_num" wx:elif="{{item.type == 2}}">-{{item.amount}}</view>
+            <view class="wallet_content_num" wx:elif="{{item.type == 3}}">+{{item.amount}}</view>
+            <view class="wallet_content_num" wx:elif="{{item.type == 4}}">+{{item.amount}}</view>
+            <view class="wallet_content_num" wx:elif="{{item.type == 5}}">+{{item.amount}}</view>
+        </view>
+        <!-- <view class="wallet_content">
+            <view class="wallet_content_lift">
+                <image src="../../../../images/ti.png" />
+                <view class="wallet_content_txt">
+                    <view>提现成功</view>
+                    <view class="exception">2019-03-29 09:57:30</view>
+                </view>
+            </view>
+            <view class="wallet_content_num">-600</view>
+        </view> -->
+    </view>
+</view>

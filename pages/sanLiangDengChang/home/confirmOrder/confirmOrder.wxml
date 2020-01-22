@@ -1,0 +1,49 @@
+<view class="agreement">
+    <view class="agreement_txt">
+        <view class="agreement_txt_wen">温馨提示</view>
+        <view class="agreement_txt_List">
+            <view class="List">1.使用前需缴纳预付金(订单结束后在小程序个人中心提现)</view>
+            <view class="List">2.支付成功后，请输入密码，所有指示灯亮起开始充电</view>
+            <view class="List">3.如若密码输入错误，请再次重新获取密码</view>
+            <view class="List">4.设备断电后，默认断开充电，需要再次扫码验证</view>
+            <view class="List">5.如有疑问，请联系我们：400-6868-138</view>
+        </view>
+    </view>
+    <view class='guide-protocol'>
+        <view class="guide-protocol-yuan" bindtap="isCheck">
+            <image src="../../../../images/dui.png" class="guide-protocol-img" wx:if="{{isShow}}" />
+        </view>
+        <text class="guide-protocol-txt">阅读并同意</text>
+        <navigator url='./userProtocol/userProtocol' hover-class='none' hover-stop-propagation='true' class='user-protocol'>
+            《 相关条约 》
+        </navigator>
+    </view>
+     <view class="agreement_table">
+        <view class="{{tableIndex == table.id ? 'tables tables_color':'tables'}}" wx:for="{{tableList}}" wx:for-item="table" wx:key="index" data-id='{{table.id}}' bindtap="tableCut">
+            <view class="{{tableIndex == table.id ? 'tables_liu tables_liu_color':'tables_liu'}}" >{{table.name}}</view>
+            <view class="tables_txt">{{table.money}}</view>
+            <view class="tables_txt">{{table.time}}</view>
+            <image class="tables_img" wx:if="{{tableIndex == table.id}}" src="../../../../images/confirmOrder.png" />
+            <view class="tables_yuan" wx:else></view>
+        </view>
+    </view>
+    <view class="agreement_btn" bindtap='confirmRecharge'>确定充电</view>
+    <!-- 动画 -->
+    <view class="tui-loading-row" wx:if='{{circle}}'>
+        <view class="tui-loading-cell">
+            <view class="circle-line">
+                <text></text>
+                <text></text>
+                <text></text>
+                <text></text>
+                <text></text>
+                <text></text>
+                <text></text>
+                <text></text>
+            </view>
+            <view class="tui-loading-txt"><text class="txt-color">{{num}}%</text></view>
+        </view>
+    </view>
+   <!-- 语音播放 -->
+   <audio src="{{src}}" id="myAudio" ></audio>
+</view>

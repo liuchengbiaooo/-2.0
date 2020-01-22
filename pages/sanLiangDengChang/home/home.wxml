@@ -1,0 +1,100 @@
+<view class="warp">
+  <swiper class="{{isIphoneX ? 'home-swiper-x' : 'home-swiper' }}" circular autoplay indicator-dots>
+    <swiper-item wx:for='{{homeImgs}}' wx:key='index'>
+      <image mode='aspectFill' class='home-swiper-img' src='{{item.bannerImg}}'></image>
+    </swiper-item>
+  </swiper>
+  <view class="{{isIphoneX ? 'warp_introduce-x' : 'warp_introduce'}}">
+    <view class="{{isIphoneX ? 'introduce_txt-x' : 'introduce_txt'}}">全球首款太阳能黑科技共享伞</view>
+  </view>
+  <view class="{{isIphoneX ? 'home-x' : 'home' }}">
+    <!-- home_centre 有订单 -->
+    <view class="home_content" wx:if="{{isOrder}}"></view>
+    <view class="home_centre" wx:if="{{isOrder}}">
+      <view class="home_centre_chong">充电时长</view>
+      <view class="home_centre_txt">{{beginMinute}}:{{beginSecond}}</view>
+    </view>
+    <!-- no_order 没有订单 -->
+    <view class="home_content_no" wx:if="{{showOrder}}"></view>
+    <view class='no_order' bindtap='scanRecharge' wx:if="{{showOrder}}">
+      <view class="no_order_txt">扫码充电</view>
+    </view>
+    <view class="home_yin">
+      <image src="../../../images/yin.png" />
+      <view class="home_txt">音乐</view>
+    </view>
+    <view class="home_fen">
+      <image src="../../../images/deng.png" />
+      <view class="home_txt">氛围灯</view>
+    </view>
+    <view class="home_feng">
+      <image src="../../../images/feng.png" />
+      <view class="home_txt">风扇</view>
+    </view>
+    <view class="home_xi">
+      <image src="../../../images/xi.png" />
+      <view class="home_txt">小伞链接</view>
+    </view>
+    <!-- model-btn 按钮的默认样式 -->
+    <view class="home_mian" bindtap="freeCharge" wx:if='{{showModel}}'>
+      <image src="../../../images/mian.png" />
+      <view class="home_txt">免费体验</view>
+    </view>
+    <button class='model-btn-phone home_mian_phone' wx:else bindgetphonenumber='getPhone' open-type='getPhoneNumber'>
+      <image src="../../../images/mian.png" />
+      <view class="home_mian_phone_txt">免费体验</view>
+    </button>
+    <view class="home_class" wx:if="{{isOrder}}">
+      <view class="home_class_txt">
+        <text>今日能量奖励：</text>
+        <text class="home_class_color">{{todayEnergy}}</text>
+      </view>
+      <view class="home_class_txt">
+        <text class="home_class_size">会员等级：</text>
+        <text class="home_class_size home_class_color">{{LevelName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="home_jie" style="height: 64rpx;" wx:if="{{isOrder}}" bindtap="finishRecharge">
+    结束充电
+  </view>
+  <!-- 免费充电弹框 -->
+  <view class="pop_up" hidden="{{flag}}">
+    <view class="pop_up_content" wx:if='{{isTicket}}'>
+      <image src="../../../images/cha.png" bindtap='closePopUp' />
+      <view class="ticketOne"></view>
+      <view class="ticketTwo">
+        <text class="ticketTwo_txt">有效期：11月11日到11月18日</text>
+      </view>
+      <button class='model-btn pop_up_btn' open-type='share'>立即去免费充电</button>
+    </view>
+    <view class="no_ticket" wx:else>
+      <view class="no_ticket_content">
+        <image src="../../../images/cha.png" bindtap='closePopUp' />
+        <view class="no_ticket_txt">暂无优惠券</view>
+      </view>
+    </view>
+  </view>
+  <!-- 结束充电后弹框 -->
+  <view class="finish_recharge" hidden="{{finishRecharge}}">
+    <view class="recharge_bg">
+     <image class="cha" src="../../../images/homecha.png" bindtap='closeFinishPopUp'/>
+      <view class="recharge_carbon">
+        <text class="bold">+2000</text>
+        <text >分减碳值</text>
+      </view>
+      <view class="recharge_content">
+        <view >充电时长:  {{time.beginMinute}} : {{time.beginSecond}} 分</view>
+        <view >消费金额：{{actualPrice}}元</view>
+      </view>
+      <view class="recharge_fen">
+        -- 分享再获减碳积分 --
+      </view>
+      <image class="weixin" src="../../../images/weixin.png"/>
+      <image class="weibo" src="../../../images/weibo.png" />
+      <view class="recharge_txt">
+        小伞同学感谢您为地球环保做出得贡献!
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,96 @@
+<view>
+    <view class="member_heard">
+        <text>使用会员等级：</text>
+        <text class="member_heard_txt">(充电1次=减碳贡献值2000mg)</text>
+    </view>
+    <view>
+        <view class="member_table">
+            <view class="member_table_top">
+                <view class="top_txt">小学生</view>
+                <image class="xiao_img" src="https://sldc.oss-cn-beijing.aliyuncs.com/banner/5.png" />
+            </view>
+            <view class="member_table_bottom">
+                <view>10次</view>
+                <view>(20000mg)</view>
+                <view>获小学毕业证</view>
+            </view>
+        </view>
+        <view class="member_table">
+            <view class="member_table_top">
+                <view class="top_txt">中学生</view>
+                <image class="zhong_img" src="https://sldc.oss-cn-beijing.aliyuncs.com/banner/2.png" />
+            </view>
+            <view class="member_table_bottom">
+                <view>30次</view>
+                <view>(60000mg)</view>
+                <view>获中学毕业证</view>
+            </view>
+        </view>
+        <view class="member_table">
+            <view class="member_table_top">
+                <view class="top_txt">大学生</view>
+                <image class="da_img" src="https://sldc.oss-cn-beijing.aliyuncs.com/banner/4.png" />
+            </view>
+            <view class="member_table_bottom">
+                <view>50次</view>
+                <view>(100000mg)</view>
+                <view>获学士毕业证</view>
+            </view>
+        </view>
+        <view class="member_table">
+            <view class="member_table_top">
+                <view class="top_txt">研究生</view>
+                <image class="yan_img" src="https://sldc.oss-cn-beijing.aliyuncs.com/banner/6.png" />
+            </view>
+            <view class="member_table_bottom">
+                <view>70次</view>
+                <view>(140000mg)</view>
+                <view>获硕士毕业证</view>
+            </view>
+        </view>
+        <view class="member_table">
+            <view class="member_table_top">
+                <view class="top_txt">博士生</view>
+                <image class="bo_img" src="https://sldc.oss-cn-beijing.aliyuncs.com/banner/3.png" />
+            </view>
+            <view class="member_table_bottom">
+                <view>100次</view>
+                <view>(200000mg)</view>
+                <view>获博士毕业证</view>
+            </view>
+        </view>
+    </view>
+    <!-- 弹框 -->
+    <view class="pop_up" hidden="{{flag}}">
+        <view class="pop_up_topbg"></view>
+        <view class="pop_up_content">
+            <view class="pop_up_content_txt">恭喜你升级至</view>
+            <view class="pop_up_content_bgOne"></view>
+            <view class="pop_up_content_bgTwo"></view>
+            <!-- 根据class设置背景图 -->
+            <view class="{{classGrade}}"></view>
+            <view class="pop_up_content_class">{{grade}}</view>
+        </view>
+        <view class="pop_up_classList">
+            <view class="pop_up_classList_step">
+                <view class="step_yuan step_bgcolor"></view>
+                <view class="{{classzhongShow ? 'step_xian step_bgcolor' : 'step_xian'}}"></view>
+                <view class="{{classzhongShow ? 'step_yuan step_bgcolor' : 'step_yuan'}}"></view>
+                <view class="{{classdaShow ? 'step_xian step_bgcolor' : 'step_xian'}}"></view>
+                <view class="{{classdaShow ? 'step_yuan step_bgcolor' : 'step_yuan'}}"></view>
+                <view class="{{classyanShow ? 'step_xian step_bgcolor' : 'step_xian'}}"></view>
+                <view class="{{classyanShow ? 'step_yuan step_bgcolor' : 'step_yuan'}}"></view>
+                <view class="{{classboShow ? 'step_xian step_bgcolor' : 'step_xian'}}"></view>
+                <view class="{{classboShow ? 'step_yuan step_bgcolor' : 'step_yuan'}}"></view>
+            </view>
+            <view class="pop_up_classList_txt">
+                <view class="classList_txt" style="margin-left: 0rpx;">小学生</view>
+                <view class="classList_txt">中学生</view>
+                <view class="classList_txt">大学生</view>
+                <view class="classList_txt">研究生</view>
+                <view class="classList_txt">博士生</view>
+            </view>
+        </view>
+        <view class="pop_up_btn" bindtap="examine">查看会员机制</view>
+    </view>
+</view>

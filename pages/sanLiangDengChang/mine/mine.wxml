@@ -1,0 +1,88 @@
+<view>
+  <view class="mine_head">
+    <view class="mine_head_top">
+      <view class="mine_head_lift">
+      <image class="mine_head_img" src="{{UserPicURL}}" />
+      </view>
+      <view class="mine_head_righe">
+        <view class="mine_name">{{UserName}}</view>
+        <view class="mine_class" data-grade="{{levelName}}" bindtap="membership">
+          <image  class="{{classLevel}}" src="{{imgLevel}}" />
+          <view class="mine_class_txt">{{levelName}}</view>
+          
+        </view>
+         
+      </view>
+     
+    </view>
+    <view class="mine_head_huy">
+      <view wx:if="{{memberStatus == 0}}">普通会员</view>
+      <view wx:if="{{memberStatus == 1}}">月卡会员:</view>
+      <view wx:if="{{memberStatus == 2}}">年卡会员:</view>
+      <view wx:if="{{memberStatus == 3}}">终身卡:</view>
+      <view wx:if="{{memberStatus == 0}}"></view>
+      <view wx:else>{{statusTime}}</view>
+    </view>
+    <view class="mine_message">
+      <view  class="mine_message_nape" bindtap='myWallet'>
+        <view class="num num_lift">{{balance}}</view>
+        <view class="mine_message_txt">账号余额(元)</view>
+      </view>
+      <view class="mine_message_xian"></view>
+      <view class="mine_message_nape mine_center" bindtap='discountCoupon'>
+        <view class="num">0</view>
+        <view class="mine_message_txt">优惠券(张)</view>
+      </view>
+      <view class="mine_message_xian"></view>
+      <view class="mine_message_nape mine_center_right" bindtap='carbonReduction'>
+        <view class="num num_right">{{totalEnergy}}</view>
+        <view class="mine_message_txt">减碳贡献值</view>
+      </view>
+    </view>
+  </view>
+  <view class="mine_content">
+    <view class="wrap" bindtap='orderForm'>
+      <view class="interior">
+        <image src="../../../images/wode.png" />
+        <view class="interior_txt">我的订单</view>
+      </view>
+      <image src="../../../images/xiangyou.png" />
+    </view>
+    <view class="wrap">
+      <view class="interior">
+        <image src="../../../images/lianxi.png" />
+        <view class="interior_txt">联系客服</view>
+      </view>
+      <image src="../../../images/xiangyou.png" />
+    </view>
+   
+    <view class="wrap" bindtap='agreement'>
+      <view class="interior">
+        <image src="../../../images/yonghu.png" style="width: 27rpx;height: 35rpx; margin-right: 34rpx;"/>
+        <view class="interior_txt">用户协议</view>
+      </view>
+      <image src="../../../images/xiangyou.png" />
+    </view>
+    <view class="wrap">
+      <view class="interior">
+        <image src="../../../images/fuwu.png" />
+        <view class="interior_txt">服务进展</view>
+      </view>
+      <image src="../../../images/xiangyou.png" />
+    </view>
+     <view class="wrap" bindtap='aboutWe'>
+      <view class="interior">
+        <image src="../../../images/guanyu.png"/>
+        <view class="interior_txt">关于我们</view>
+      </view>
+      <image src="../../../images/xiangyou.png" />
+    </view>
+    <view class="wrap no_bottom">
+      <view class="interior">
+        <image src="../../../images/kefu.png" />
+        <view class="interior_txt">客服电话</view>
+      </view>
+      <view class="wrap_phone">400-108-1806</view>
+    </view>
+  </view>
+</view>

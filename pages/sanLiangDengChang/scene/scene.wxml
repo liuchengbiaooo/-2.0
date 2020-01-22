@@ -1,0 +1,41 @@
+<view>
+    <view wx:if="{{isFeedback}}">
+        <view class="scene_head">请选择您的反馈问题类型 (必选)</view>
+        <view class="scene_btnList">
+            <view class="{{opinion.id == opinionIndex ? 'btnList btnList_color': 'btnList'}}" wx:for="{{opinionType}}" data-id="{{opinion.id}}" wx:for-item="opinion" wx:key="index" bindtap="opinion">{{opinion.name}}</view>
+        </view>
+        <form bindsubmit="submitHandler" class="scene_from">
+            <!-- <textarea placeholder="说点什么吧…" name="textarea" class="from_textarea"> -->
+            <view class="distance_textarea">
+                <textarea placeholder="说点什么吧…" name="textarea" value='{{content}}' maxlength="400" bindinput="bindTextarea" class="from_textarea">
+                    <view class='from_astrict'>{{num}}/400</view>
+                </textarea>
+            </view>
+            <view class="from_input">
+                <text>名称</text>
+                <view class="distance">
+                    <input class="weui-input input_set" name='name' value='{{name}}' type='text' />
+                </view>
+            </view>
+            <view class="from_input">
+                <text>设备码</text>
+                <view class="distance">
+                    <input class="weui-input input_set" name='deviceCode' value='{{deviceCode}}' type='text' disabled="true" catchtap="equipmentQRcode" />
+                </view>
+            </view>
+            <view class="from_input">
+                <text>联系方式</text>
+                <view class="distance">
+                    <input class="weui-input input_set" name='tel' type='number' maxlength='11' value='{{tel}}' />
+                </view>
+            </view>
+            <button form-type="submit" class="from_btn">提交</button>
+        </form>
+    </view>
+    <view wx:else class="succeed">
+         <image src="../../../images/feedback.png" />
+         <view class="succeed_txt">反馈成功</view>
+         <view class="succeed_txtList">感谢你对伞亮科技的关注与支持，我们会认真处理你的反馈，尽快修复和完善相关功能</view>
+        <view class="succeed_btn" bindtap="homePage">返回首页</view>
+    </view>
+</view>

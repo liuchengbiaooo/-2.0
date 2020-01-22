@@ -1,0 +1,98 @@
+page {
+    background-color: #fff;
+}
+
+.wallet_head {
+    width: 750rpx;
+    height: 405rpx;
+    background-image: url("https://sldc.oss-cn-beijing.aliyuncs.com/banner/beijing2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+
+.head_balance {
+    color: #ffffff;
+    font-size: 63rpx;
+}
+
+.head_balance image {
+    width: 69rpx;
+    height: 65rpx;
+    margin: 50rpx 0rpx 0rpx 212rpx;
+}
+
+.head_balance_txt {
+    margin-left: 35rpx;
+}
+
+.wallet_head_usable {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 19rpx;
+    font-size: 24rpx;
+}
+
+.head_btn {
+    display: flex;
+    margin-top: 34rpx;
+}
+
+.common {
+    width: 169rpx;
+    height: 53rpx;
+    border-radius: 23rpx;
+    font-size: 28rpx;
+    color: #ffffff;
+    line-height: 53rpx;
+    text-align: center;
+    border: solid 1rpx #ffffff;
+}
+
+.head_btn_lift {
+    margin-left: 139rpx;
+}
+
+.head_btn_right {
+    margin-left: 134rpx;
+}
+
+.wallet_detail {
+    color: #333333;
+    font-size: 30rpx;
+    margin-left: 31rpx;
+}
+
+.wallet_content {
+    padding: 23rpx 29rpx 23rpx 31rpx;
+    /* width: 750rpx; */
+    /* height: 110rpx; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #F1F1F1;
+}
+
+.wallet_content_lift {
+    display: flex;
+}
+
+.wallet_content_lift image {
+    width: 64rpx;
+    height: 64rpx;
+}
+
+.wallet_content_txt {
+    margin-left: 31rpx;
+    color: #333333;
+    font-size: 28rpx;
+}
+
+.exception {
+    color: #999999;
+    font-size: 20rpx;
+}
+
+.wallet_content_num {
+    color: #333333;
+    font-size: 28rpx;
+}

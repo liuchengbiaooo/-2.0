@@ -1,0 +1,78 @@
+page {
+    background-color: #ffffff;
+}
+
+.agreement_head {
+    color: #000000;
+    font-size: 36rpx;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 118rpx;
+    margin-bottom: 30rpx;
+}
+
+.agreement_btn {
+    font-size: 32rpx;
+    color: #ffffff;
+    font-weight: normal;
+    width: 672rpx;
+    margin-left: 40rpx;
+    height: 88rpx;
+    background-image: linear-gradient(90deg, #31d0be 0%, #6ff1c8 100%);
+    border-radius: 44rpx;
+    margin-top: 20rpx;
+    text-align: center;
+    line-height: 88rpx;
+}
+
+.agreement_txt {
+    color: #757575;
+    font-size: 26rpx;
+    text-align: center;
+    margin-bottom: 75rpx;
+}
+
+.agreement_txt_wen {
+    margin-top: 73rpx;
+}
+
+.agreement_txt_List {
+    /* line-height: 69rpx; */
+    text-align: left;
+    padding: 0rpx 40rpx;
+    /* margin-top: 24rpx; */
+}
+
+.List {
+    margin-top: 10rpx;
+}
+
+.guide-protocol {
+    display: flex;
+    margin-left: 164rpx;
+}
+
+.guide-protocol-txt {
+    color: #757575;
+    font-size: 34rpx;
+}
+
+.user-protocol {
+    color: #354365;
+    font-size: 34rpx;
+}
+
+.guide-protocol-yuan {
+    width: 38rpx;
+    height: 38rpx;
+    margin: 6rpx 29rpx 0rpx 0rpx;
+    border-radius: 50%;
+    border: 1rpx solid #848483;
+    box-sizing: border-box;
+}
+
+.guide-protocol-img {
+    width: 26rpx;
+    height: 26rpx;
+    margin: 5rpx 0rpx 0rpx 6rpx;
+}

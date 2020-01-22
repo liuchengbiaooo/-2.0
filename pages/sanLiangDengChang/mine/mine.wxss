@@ -1,0 +1,206 @@
+page {
+    background-color: #fff;
+}
+
+.mine_head {
+    box-sizing: border-box;
+    /* border-top: 1rpx solid #11ab9a;
+    opacity: 0.9; */
+    height: 508rpx;
+    width: 750rpx;
+    background-image: url("https://sldc.oss-cn-beijing.aliyuncs.com/firmware/1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+
+.mine_head_top {
+    display: flex;
+}
+
+.mine_head_lift {
+    margin: 55rpx 46rpx 0rpx 76rpx;
+    height: 255rpx;
+    width: 255rpx;
+    background-image: url("https://sldc.oss-cn-beijing.aliyuncs.com/firmware/2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+
+.mine_head_img {
+    width: 212rpx;
+    height: 212rpx;
+    margin-left: 22rpx;
+    margin-top: 16rpx;
+    border-radius: 50%;
+}
+
+.mine_head_huy {
+    display: flex;
+    color: #ffffff;
+    margin-left: 375rpx;
+    /* width: 360rpx; */
+    display: inline-block;
+    padding: 10rpx 20rpx;
+    font-size: 24rpx;
+    border-radius: 10rpx;
+    background-color: rgba(14, 112, 101, 0.2);
+}
+
+.mine_name {
+    margin-top: 101rpx;
+    color: #ffffff;
+    font-family: PingFang-SC-Regular;
+    font-size: 41rpx;
+}
+
+.mine_class {
+    margin-top: 40rpx;
+    display: flex;
+    width: 307rpx;
+    height: 58rpx;
+    background-color: rgba(14, 112, 101, 0.15);
+    border-radius: 24rpx;
+    /* opacity: 0.15; */
+}
+
+
+/* .mine_class_LV {
+    margin: 17rpx 40rpx 17rpx 55rpx;
+    width: 64rpx;
+    height: 24rpx;
+    text-align: center;
+    background-color: #bebebe;
+    border-radius: 4rpx 0rpx 0rpx 4rpx;
+    color: #fdfdfd;
+    font-size: 21rpx;
+} */
+
+.xiaoxuesheng {
+    margin: 0rpx 40rpx 17rpx 55rpx;
+    width: 39rpx;
+    height: 52rpx;
+}
+
+.zhongxuesheng {
+    margin: 0rpx 40rpx 17rpx 55rpx;
+    width: 40rpx;
+    height: 52rpx;
+}
+
+.daxuesheng {
+    margin: 0rpx 40rpx 17rpx 55rpx;
+    width: 39rpx;
+    height: 51rpx;
+}
+
+.yanjiusheng {
+    margin: 0rpx 40rpx 17rpx 55rpx;
+    width: 60rpx;
+    height: 50rpx;
+}
+
+.boshisheng {
+    margin: 0rpx 40rpx 17rpx 55rpx;
+    width: 63rpx;
+    height: 54rpx;
+}
+
+.mine_class_txt {
+    margin-top: 10rpx;
+    color: #ededed;
+    font-size: 26rpx;
+    height: 31rpx;
+    border-bottom: 1rpx solid #fff;
+}
+
+.mine_message {
+    width: 632rpx;
+    margin: 25rpx 41rpx 0rpx 77rpx;
+    /* border: 1rpx solid red; */
+    display: flex;
+}
+
+.mine_message_nape {
+    width: 32.3%;
+    /* border-right: 1rpx solid #ffffff; */
+}
+
+.mine_message_xian {
+    width: 1rpx;
+    height: 45rpx;
+    margin-top: 10rpx;
+    background-color: #ffffff;
+}
+
+.mine_center {
+    text-align: center;
+}
+
+.mine_center_right {
+    text-align: right;
+}
+
+.num {
+    color: #ffffff;
+    font-size: 32rpx;
+}
+
+.num_lift {
+    margin-left: 26rpx;
+}
+
+.num_right {
+    margin-right: 20rpx;
+}
+
+.mine_message_txt {
+    color: #ffffff;
+    font-size: 25rpx;
+}
+
+.mine_content {
+    padding: 0rpx 42rpx 0rpx 35rpx;
+    margin-top: 20rpx;
+}
+
+.wrap {
+    height: 88rpx;
+    border-bottom: 1rpx solid rgba(91, 91, 91, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.interior {
+    margin-top: 29rpx;
+    color: #5b5b5b;
+    font-size: 30rpx;
+    display: flex;
+}
+
+.interior_txt {
+    margin-top: -1rpx;
+}
+
+.interior>image {
+    width: 35rpx;
+    height: 33rpx;
+    margin: 4rpx 27rpx 0rpx 0rpx;
+}
+
+.wrap>image {
+    margin-top: 40rpx;
+    width: 20rpx;
+    height: 20rpx;
+}
+
+.no_bottom {
+    border-bottom: 0rpx;
+}
+
+.wrap_phone {
+    color: #5b5b5b;
+    font-size: 30rpx;
+    margin-top: 31rpx;
+}

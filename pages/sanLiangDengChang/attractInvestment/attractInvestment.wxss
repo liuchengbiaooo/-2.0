@@ -1,0 +1,89 @@
+page {
+    padding: 0 !important;
+    background-color: #ffffff;
+}
+
+.zs {
+    position: relative;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+}
+
+.zs-imgbox {
+    width: 100%;
+    height: 5110rpx;
+}
+
+.zs-img {
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+}
+
+.fromList {
+    /* position: absolute;
+    bottom: 110rpx; */
+    box-sizing: border-box;
+}
+
+.fromList_input {
+    margin-top: 5rpx;
+    width: 480rpx;
+}
+
+.input_list {
+    box-sizing: border-box;
+    padding: 0rpx 36rpx 0rpx 31rpx;
+}
+
+.input_item {
+    width: 658rpx;
+    /* height: 89rpx; */
+    margin-top: 24rpx;
+    background-color: #ffffff;
+    border-radius: 10rpx;
+    border: solid 1rpx #dddddd;
+    padding: 20rpx 0rpx 20rpx 24rpx;
+    display: flex;
+}
+
+.input_item_txt {
+    color: #666666;
+    font-size: 32rpx;
+    margin-right: 35rpx;
+}
+
+.btn_bg {
+    /* display: flex; */
+    position: relative;
+    margin-top: 27rpx;
+    margin-bottom: 20rpx;
+}
+
+button {
+    width: 253rpx;
+    height: 62rpx;
+    background-color: #1acbb7;
+    border-radius: 10rpx;
+    color: #ffffff;
+    font-size: 30rpx;
+    line-height: 62rpx;
+    /* border: solid 1rpx #000000; */
+}
+
+button::after {
+    border: none;
+}
+
+.btn_bg_xian {
+    position: absolute;
+    width: 156rpx;
+    height: 4rpx;
+    background-color: #1acbb7;
+    left: 94rpx;
+    top: 32rpx;
+}
+
+.xian_right {
+    left: 500rpx;
+}
